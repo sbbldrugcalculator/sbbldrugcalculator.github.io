@@ -1,4 +1,0 @@
-download_button
-add
-remove
-select_arrows
