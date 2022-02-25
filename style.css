@@ -10,6 +10,7 @@ body {
     --sbbl-green: rgb(166, 210, 131);
     --table-even-rows: rgba(200, 200, 200, 0.3);
     --quantity-wrapper-length: 13rem;
+    --input-height: 1.7rem;
 }
 
 body {
@@ -123,7 +124,8 @@ div.quantity_wrapper {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    height: 1.6rem;
+    height: var(--input-height);
+    box-sizing: border-box;
 }
 input.quantity {
     vertical-align: middle;
@@ -141,12 +143,12 @@ input.quantity {
     height: 100%;
 }
 
-select.drug_select.svelte-5ttlpk{border:0.09em solid var(--sbbl-green);width:13rem;padding-left:0.3rem}
+label.svelte-1c25rjy{width:max-content}select.drug_select.svelte-1c25rjy{border:0.09em solid var(--sbbl-green);width:13rem;padding-left:0.3rem;height:var(--input-height);box-sizing:border-box}
 select.unit.svelte-1p43h81{vertical-align:middle;float:right;position:relative;display:run-in;border:0px solid transparent;-webkit-tap-highlight-color:transparent;outline:none !important;width:calc(25% - 0.3rem);padding:0px;padding-left:0.3rem;height:100%}
-.drug_select.svelte-1vrtxfv{width:fit-content;margin-right:100%}@media(max-width: 1000px){.drug_select.svelte-1vrtxfv{grid-column:span 2}.quantity_wrapper.svelte-1vrtxfv{grid-column:span 2}}
-.slot.svelte-1rkbe73{text-align:left;padding-right:2em}input.svelte-1rkbe73{border:0.09rem solid var(--sbbl-green) !important;border-radius:3px;vertical-align:middle;font-size:13px;margin:0.5px;height:1.75rem;width:13rem;position:relative;border:0px solid transparent;-webkit-tap-highlight-color:transparent;outline:none !important;margin-right:auto;grid-column-start:2}.slot.svelte-1rkbe73{grid-column-start:1}@media(min-width: 1000px){input.svelte-1rkbe73{grid-column-end:6}}@media(max-width: 1000px){input.svelte-1rkbe73{grid-column-end:3}}
-select.svelte-1dm29s7{border:0.09em solid var(--sbbl-green);width:10rem;margin-right:100%}
-@media(min-width: 1000px){div#input_table.svelte-4ox2mn.svelte-4ox2mn{display:grid;grid-column-gap:5px;grid-row-gap:1rem;grid-template-columns:repeat(5, max-content)}div.mixture_button.svelte-4ox2mn.svelte-4ox2mn{grid-column:3 / 6}div.share_column.svelte-4ox2mn.svelte-4ox2mn{display:contents}}@media(max-width: 1000px){div#input_table.svelte-4ox2mn.svelte-4ox2mn{display:grid;grid-column-gap:5px;grid-row-gap:1rem;grid-template-columns:repeat(3, 1fr)}div.share_column.svelte-4ox2mn.svelte-4ox2mn{display:grid;grid-auto-columns:min-content;--quantity-wrapper-length:10rem}.share_column.svelte-4ox2mn>.svelte-4ox2mn:nth-child(2){float:none}div.drug_button.svelte-4ox2mn.svelte-4ox2mn{grid-column:2}div.mixture_button.svelte-4ox2mn.svelte-4ox2mn{grid-column:2}.input_div_heading.drug_heading.svelte-4ox2mn.svelte-4ox2mn{grid-row:span 3;grid-column:1}.input_div_heading.svelte-4ox2mn.svelte-4ox2mn{padding-right:1em}}div.input_div_heading.svelte-4ox2mn>.svelte-4ox2mn:not(div.tab){margin-right:auto}div.input_div_heading.svelte-4ox2mn.svelte-4ox2mn{text-align:left}
+.drug_select.svelte-1ouqucb{width:fit-content}@media(max-width: 1000px){.drug_select.svelte-1ouqucb{grid-column:span 2}.quantity_wrapper.svelte-1ouqucb{grid-column:span 2}}
+.slot.svelte-1jusxe1{text-align:left;padding-right:2em}input.svelte-1jusxe1{border:0.09rem solid var(--sbbl-green) !important;border-radius:3px;vertical-align:middle;font-size:13px;margin:0.5px;height:var(--input-height);width:13rem;position:relative;-webkit-tap-highlight-color:transparent;outline:none !important;margin-right:auto;grid-column-start:2;box-sizing:border-box}.slot.svelte-1jusxe1{grid-column-start:1}@media(min-width: 1000px){input.svelte-1jusxe1{grid-column-end:6}}@media(max-width: 1000px){input.svelte-1jusxe1{grid-column-end:3}}
+select.svelte-1hbqw9w{border:0.09em solid var(--sbbl-green);width:10rem;height:var(--input-height);box-sizing:border-box}
+@media(min-width: 1000px){div#input_table.svelte-11kju1z.svelte-11kju1z{display:grid;grid-column-gap:5px;grid-row-gap:1rem;grid-template-columns:repeat(5, max-content)}div.mixture_button.svelte-11kju1z.svelte-11kju1z{grid-column:3 / 6}div.share_column.svelte-11kju1z.svelte-11kju1z{display:contents}}@media(max-width: 1000px){div#input_table.svelte-11kju1z.svelte-11kju1z{display:grid;grid-column-gap:5px;grid-row-gap:1rem;grid-template-columns:repeat(3, 1fr)}div.share_column.svelte-11kju1z.svelte-11kju1z{display:block;--quantity-wrapper-length:10rem;width:max-content}div.share_column.svelte-11kju1z>.svelte-11kju1z{display:inline-block;margin-right:auto !important}div.share_column.svelte-11kju1z>.svelte-11kju1z:nth-child(2){vertical-align:middle}div.drug_button.svelte-11kju1z.svelte-11kju1z{grid-column:2}div.mixture_button.svelte-11kju1z.svelte-11kju1z{grid-column:2}.input_div_heading.drug_heading.svelte-11kju1z.svelte-11kju1z{grid-row:span 3;grid-column:1}.input_div_heading.svelte-11kju1z.svelte-11kju1z{padding-right:1em}}div.input_div_heading.svelte-11kju1z>.svelte-11kju1z:not(div.tab){margin-right:auto}div.input_div_heading.svelte-11kju1z.svelte-11kju1z{text-align:left}
 .question_boolean {
     color: rgb(119, 119, 119);
     margin-bottom: 40px;
